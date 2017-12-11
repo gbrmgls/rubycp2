@@ -1,0 +1,278 @@
+html{
+  font-family: "Open Sans";
+}
+.ruby
+{
+				margin-left: 1250px;
+				margin-top: -445px;
+}
+.ajeitar
+{
+				margin-left: 1250px;
+				margin-top: -445px;
+}
+.body1{
+  margin: 0;
+  background-color: #083331;
+}
+
+.body2{
+  margin: 0;
+  background-color: #d6d6d6;
+}
+
+@keyframes fadein{
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+@keyframes slidein {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+
+.slide{
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+.cx1{
+  position: relative;
+  background-color: white;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  height: 600px;
+  top: 50%;
+  margin-top: -300px;
+  animation-duration: 1s;
+  animation-name: fadein;
+  padding-top: 10px;
+}
+
+.titulo_cx1{
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  color: #00514C;
+}
+.saldo
+{
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 10px;
+}
+.gasto
+{
+	margin-left: 700px;
+	margin-top: 10px;
+}
+.saldocapa
+{
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 10px;
+
+}
+.resultado
+{
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 30px;
+	font-size: 350%;
+
+}
+.footer_cx1{
+  background-color: #c7c7c7;
+  position: absolute;
+  font-size: 14px;
+  width: 400px;
+  bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer_cx1 a{
+  color: #00514C
+}
+
+input[type=text], input[type=email], input[type=password]{
+  animation-name: slidein;
+  height: 8%;
+  width: 80%;
+}
+
+input[type=submit]:hover{
+  font-weight: bold;
+  color: white;
+  background-color: #237e79;
+  border: none;
+  width: 30%;
+  height: 5%;
+}
+
+input[type=submit]{
+  font-weight: bold;
+  color: white;
+  background-color: #00514C;
+  border: none;
+  width: 30%;
+  height: 5%;
+}
+
+
+.menu{
+  background-color: #d6d6d6;
+  width: 150px;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  font-weight: bolder;
+  font-style: italic;
+  color: white;
+}
+
+
+.titulo_menu{
+  font-weight: bolder;
+  background-color: #19BFF6;
+  padding-top: 0px;
+  padding-bottom: 1px;
+}
+
+.footer_menu{
+  position: absolute;
+  background-color: #19BFF6;
+  font-size: 14px;
+  width: 1355px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  bottom: 0;
+}
+
+.footer_menu a{
+  color: white;
+}
+.saldomeio{
+	text-align: center;
+	margin-top: 130px;
+	font-size: 250%;
+
+}
+.resultadomeio{
+	text-align: center;
+	margin-top: -15px;
+	font-size: 350%;
+
+}
+
+.opcoes_menu{
+  color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opcoes_menu li{
+  padding: 10px;
+  transition: 0.1s;
+}
+.efeito a{
+  padding: 10px;
+  transition: 0.5s;
+}
+.efeito a:hover{
+  background-color: #333;
+}
+  /*
+
+
+*/
+/*-----------------------------------------------*/
+			.google
+			{
+				margin-left: 910px;
+				margin-top: -30px;
+			}
+			.localhistorico
+			{
+				margin-left: -850px;
+				margin-top: -300px;
+				font-size: 130%;
+
+
+			}
+			.fixado
+			{
+			position: absolute;
+			margin-left: 480px;
+			margin-top: 80px;
+			}
+.quadradolocal
+			{
+	position: absolute;
+			margin-left: -15px;
+			margin-top: -340px;
+			}
+	body {
+  margin: 0;
+		}
+
+    .header {
+    text-align: center;
+			}
+	.topnav
+	{
+
+    overflow: hidden;
+    background-color: #333;
+
+
+	}
+	.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+	.body
+	{
+	background-color: lightblue;
+}
+
+h2{
+    color: white;
+    text-align: center;
+	font-family: 'Kanit', sans-serif;
+}
+
+ul {
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+	}
+
+.fonteespecial
+{
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+	font-size: 25px;
+	color: black;
+}
+.center {
+    text-align: center;
+}
+.button {
+    background-color: #d6d6d6;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;

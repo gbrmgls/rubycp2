@@ -1,0 +1,279 @@
+/*MENU LATERAL DAS TELAS PRINCIPAIS*/
+body
+{
+  margin: 0;
+  padding: 0;
+font-family: 'Nunito', sans-serif;
+
+  background-color: #ebebeb;
+}
+
+.menu_lateral
+{
+  background-color: #00c2cc;
+  padding: 0;
+  margin: 0;
+  width: 15%;
+  height: 100vh;
+  text-align: center;
+  float: left;
+}
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a
+{
+  padding: 16px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+ul a:hover
+{
+  background-color: #00b2bb;
+  transition: 0.2s;
+  color: white;
+}
+
+/*DIV EXTERNA PARA ORGANIZACAO*/
+.div_geral
+{
+  height: 100vh;
+  max-width: 100%;
+  /*background-color: blue;*/
+  margin-left: 15%
+}
+
+/*TELA PRINCIPAL*/
+.tela
+{
+  padding: 15px;
+  height: 90%;
+}
+
+/*Destaca a opção atual do menu lateral*/
+.opcao_atual
+{
+  background-color: #444444;
+}
+
+/*-------------------------- FUNCIONALIDADES ------------*/
+/*PRINCIPAL.PHP*/
+/*Saldo monetário geral*/
+.saldo
+{
+
+  background-color: #57d3ff;
+      border-radius: 50%;
+border: 2px solid #555555;
+border-style: dashed;
+  padding: 1%;
+  width: 21%;
+  height: 35%;
+
+  margin-top: -1%;
+  margin-left: -1%;
+  
+}
+
+/*Metas do mês*/
+.metas
+{
+  background-color: #ff987d;
+  border: 2px solid #ff8464;
+  border-radius: 5%;
+  padding: 16px;
+  width: 18%;
+  height: 28%;
+  margin-top: -25%;
+  margin-left: 0%;
+
+}
+
+/*Saídas do mês*/
+.pagamentos
+{
+	  margin-top: -54%;
+	margin-left: 62%;
+  background-color: #00c49d;
+   border-radius: 5%;
+border: 2px solid #00a685;
+  padding: 16px;
+  width: 35%;
+  height: 95%;
+
+}
+
+/*Entradas do mês*/
+.recebimentos
+{
+	text-align: center;
+   background-color: #00c49d;
+   border-radius: 5%;
+border: 2px solid #00a685;
+  padding: 16px;
+  width: 35%;
+  height: 95%;
+  margin-top: -20%;
+  margin-left: 23%;
+   
+   }
+
+/*CONFIG.PHP*/
+.config_conta
+{
+  background-color: #FF529C;
+  border-radius: 5%;
+  width: 30%;
+  height: 60%;
+  float: left;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 30%;
+  text-align: center;
+}
+
+
+/*SOBRE.PHP*/
+.sobre
+{
+  background-color: #17BB61;
+  padding: 16px;
+  width: 100.5%;
+  height: 20%;
+  float: left;
+  display: flex;
+  margin-top: 10%;
+  margin-left: -2%;
+}
+
+/*AJUDA.PHP*/
+.ajuda
+{
+  background-color: red;
+  padding: 16px;
+  width: 80%;
+  height: 80%;
+  float: left;
+  display: flex;
+}
+.usuario
+{
+	margin-top: 5%;
+	margin-left: 3%;
+}
+.seta
+{ 
+	margin-top: -120%;
+  margin-left: 85%;
+  width: 40%;
+  height: 40%;
+
+}
+.button {
+
+    background-color: white;
+    border: none;
+    color: #555555;
+font-family: 'Nunito', sans-serif;
+
+font-weight: bold;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	cursor: pointer;
+	border-radius: 10%;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button1:hover {
+    background-color: #4cb9e0;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button2:hover {
+    background-color: #e58c75;
+    color: white;
+}
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button3:hover {
+    background-color: #009f80;
+    color: white;
+}
+.button4 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button4:hover {
+    background-color: #009f80;
+    color: white;
+}
+.button5 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #009f80;
+    color: white;
+}
+.button6 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button6:hover {
+    background-color: #009f80;
+    color: white;
+}
+.button7 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button7:hover {
+    background-color: #F41E7A;
+    color: white;
+}
+.button8 {
+
+    background-color: white; 
+    color: black; 
+    border: 2px solid #555555;
+}
+
+.button8:hover {
+    background-color: #F41E7A;
+    color: white;
+}
