@@ -29,7 +29,7 @@
     <div class="div_geral">
 
       <div class="tela">
-
+        <!-- INÍCIO SCRIPT DOS GRÁFICOS////////////////////////////////////////////////////////// -->
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
           google.charts.load('current', {'packages':['corechart']});
@@ -52,37 +52,8 @@
             chart.draw(data, options);
           }
         </script>
-        <div id="piechart1" style="width: 40%; height: 40%;"></div>
 
-        <script type="text/javascript">
-          google.charts.load('current', {'packages':['corechart']});
-          google.charts.setOnLoadCallback(drawChart);
 
-          function drawChart() {
-
-            var data = google.visualization.arrayToDataTable([
-              ['Dinheiro', 'Pagamentos'],
-              ['Água',     <?php echo $_SESSION["agua"];?>],
-              ['Luz',      <?php echo $_SESSION["luz"];?>],
-              ['Telefone',     <?php echo $_SESSION["tel"];?>],
-              ['Internet',     <?php echo $_SESSION["int"];?>],
-              ['Televisão',     <?php echo $_SESSION["tv"];?>],
-              ['Gás',     <?php echo $_SESSION["gas"];?>],
-              ['Aluguel',     <?php echo $_SESSION["aluguel"];?>],
-              ['Outros',     <?php echo $_SESSION["outros"];?>]
-            ]);
-
-            var options = {
-              title: 'Tipos de pagamentos'
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
-
-            chart.draw(data, options);
-          }
-        </script>
-
-        <div id="piechart2" style="width: 40%; height: 30%;"></div>
 
         <script type="text/javascript">
           google.charts.load('current', {'packages':['corechart']});
@@ -105,9 +76,76 @@
             chart.draw(data, options);
           }
         </script>
-        <div id="piechart3" style="width: 40%; height: 30%;"></div>
-      </div>
 
+
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+              ['Dinheiro', 'Recebimentos'],
+              ['Incompleto',     <?php echo $_SESSION["meta"]["valor"] - $_SESSION["saldo"];?>],
+              ['Completo',      <?php echo $_SESSION["saldo"];?>,]
+            ]);
+
+            var options = {
+              title: 'Andamento da Meta'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+
+            chart.draw(data, options);
+          }
+        </script>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load("current", {packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+
+          ['Dinheiro', 'Pagamentos', { role: "style" }],
+          ['Água',     <?php echo $_SESSION["agua"];?>, "blue"],
+          ['Luz',      <?php echo $_SESSION["luz"];?>, "red"],
+          ['Telefone',     <?php echo $_SESSION["tel"];?>, "yellow"],
+          ['Internet',     <?php echo $_SESSION["int"];?>, "green"],
+          ['Televisão',     <?php echo $_SESSION["tv"];?>, "pink"],
+          ['Gás',     <?php echo $_SESSION["gas"];?>, "brown"],
+          ['Aluguel',     <?php echo $_SESSION["aluguel"];?>, "purple"],
+          ['Outros',     <?php echo $_SESSION["outros"];?>, "black"]
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+                        { calc: "stringify",
+                          sourceColumn: 1,
+                          type: "string",
+                          role: "annotation" },
+                          2]);
+
+                          var options = {
+                            title: "Tipos de pagamentos",
+                            width: 600,
+                            height: 400,
+                            bar: {groupWidth: "95%"},
+                            legend: { position: "none" },
+                          };
+                          var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+        chart.draw(view, options);
+      }
+      </script>
+      <!-- FIM SCRIPT DOS GRÁFICOS////////////////////////////////////////////////////////// -->
+
+      <div id="piechart4" style="width: 40%; height: 30%;"></div>  <!-- GRAFICO DA META -->
+      <div id="piechart3" style="width: 40%; height: 30%;"></div> <!-- GRAFICO DE RECEBIMENTOS -->
+      <div id="piechart2" style="width: 40%; height: 30%;"></div> <!-- GRAFICO DE MOVIMENTACAO DE CAPITAL -->
+      <div id="columnchart_values" style="width: 900px; height: 300px;"></div> <!-- GRAFICO DE PAGAMENTOS -->
+
+
+      </div>
     </div>
 
   </body>
