@@ -28,6 +28,7 @@
         $_SESSION["email"] = $usuario["email"];
         $_SESSION["senha"] = $usuario["senha"];
         $_SESSION["id"] = $usuario["id"];
+        $_SESSION["foto"] = $usuario["foto"];
 
         $metas_bd = $BD->comando("SELECT * FROM metas WHERE id = '".$_SESSION["id"]."'");
         $meta = $metas_bd->fetch_assoc();

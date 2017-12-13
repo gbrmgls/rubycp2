@@ -13,7 +13,8 @@
   <body>
 
     <div class="menu_lateral">
-      <img src="imagens/usuario.png"><br>
+      <img class="container" src="<?php echo $_SESSION["foto"]; ?>"><br>
+
       Olá, <?php echo $_SESSION["nome"]; ?>
       <ul>
         <li><a href="principal.php">Início</a></li>
@@ -29,15 +30,17 @@
       <div class="tela">
 
 				<img class="usuario" src="imagens/usuario.png">
-		<button class="button button8">ⵙ</button>
+    		<!-- <button class="button button8">ⵙ</button> -->
         <div class="config_conta">
 
-          <form method="POST" action="alterar_cadastro.php">
+          <form method="POST" action="alterar_cadastro.php" enctype="multipart/form-data">
           <u><b><font size="5">Alterar Configurações da Conta:</font></b></u><br><br>
           <b>Nome:</b> <input type="text" name="nome" value="<?php echo $_SESSION["nome"]; ?>"required><br><br><br>
           <b>Email:</b> <input type="email" name="email" value="<?php echo $_SESSION["email"]; ?>" required><br><br><br>
           <b>Senha:</b> <input type="password" name="senha" value="<?php echo $_SESSION["senha"]; ?>" required><br><br><br>
-          <button class="button button7">Confirmar Alteração</button>
+          <b>Foto: </b> <input type="file" name="foto" required><br><br><br>
+          <!-- <button class="button button7">Confirmar Alteração</button> -->
+          <input type="submit" value="Confirmar Alterações">
 			<img class="seta" src="imagens/seta.png">
 
 

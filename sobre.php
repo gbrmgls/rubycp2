@@ -15,7 +15,8 @@
   <body>
 
     <div class="menu_lateral">
-      <img src="imagens/usuario.png"><br>
+      <img class="container" src="<?php echo $_SESSION["foto"]; ?>"><br>
+
       Olá, <?php echo $_SESSION["nome"]; ?>
       <ul>
         <li><a href="principal.php">Início</a></li>

@@ -19,6 +19,13 @@ font-family: 'Nunito', sans-serif;
   float: left;
 }
 
+.container {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
 ul
 {
   list-style-type: none;
@@ -79,7 +86,7 @@ border-style: dashed;
 
   margin-top: -1%;
   margin-left: -1%;
-  
+
 }
 
 /*Metas do mês*/
@@ -122,7 +129,7 @@ border: 2px solid #00a685;
   height: 95%;
   margin-top: -20%;
   margin-left: 23%;
-   
+
    }
 
 /*CONFIG.PHP*/
@@ -169,7 +176,7 @@ border: 2px solid #00a685;
 	margin-left: 3%;
 }
 .seta
-{ 
+{
 	margin-top: -120%;
   margin-left: 85%;
   width: 40%;
@@ -193,11 +200,11 @@ font-weight: bold;
 	border-radius: 10%;
 	-webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-	
+
 }
 .button1 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -207,8 +214,8 @@ font-weight: bold;
 }
 
 .button2 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -217,8 +224,8 @@ font-weight: bold;
     color: white;
 }
 .button3 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -227,8 +234,8 @@ font-weight: bold;
     color: white;
 }
 .button4 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -237,8 +244,8 @@ font-weight: bold;
     color: white;
 }
 .button5 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -247,8 +254,8 @@ font-weight: bold;
     color: white;
 }
 .button6 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -257,8 +264,8 @@ font-weight: bold;
     color: white;
 }
 .button7 {
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
@@ -268,8 +275,8 @@ font-weight: bold;
 }
 .button8 {
 
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #555555;
 }
 
