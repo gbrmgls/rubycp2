@@ -142,7 +142,7 @@
       <div id="piechart4" style="width: 40%; height: 30%;"></div>  <!-- GRAFICO DA META -->
       <div id="piechart3" style="width: 40%; height: 30%;"></div> <!-- GRAFICO DE RECEBIMENTOS -->
       <div id="piechart2" style="width: 40%; height: 30%;"></div> <!-- GRAFICO DE MOVIMENTACAO DE CAPITAL -->
-      <div id="columnchart_values" style="width: 900px; height: 300px;"></div> <!-- GRAFICO DE PAGAMENTOS -->
+      <div id="columnchart_values" style="width: 900px; height: 200px;"></div> <!-- GRAFICO DE PAGAMENTOS -->
 
 
       </div>
